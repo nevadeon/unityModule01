@@ -1,0 +1,70 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using System.Collections;
+
+[RequireComponent(typeof(CharacterController))]
+
+public class PlayerController : MonoBehaviour
+{
+    // // PlayerInput _playerInput;
+    // // InputAction _moveAction;
+    // // InputAction _jumpAction;
+    // CharacterController _characterController;
+
+
+    // const float k_gravity = -9.01f;
+    // Vector3 _direction;
+
+    // [SerializeField] float gravityMultiplier;
+    // [SerializeField] float HorizontalSpeed;
+    // [SerializeField] float jumpForce;
+
+    // void Awake()
+    // {
+    //     _characterController = GetComponent<CharacterController>();
+    //     // _playerInput = GetComponent<PlayerInput>();
+    //     // _moveAction = _playerInput.actions.FindAction("Move");
+    //     // _jumpAction = _playerInput.actions.FindAction("Jump");
+    //     // _jumpAction.started += ctx => Jump();
+    // }
+
+    // void Start()
+    // {
+    // }
+
+    // void Update()
+    // {
+    //     _direction.y = GetVerticalMovement();
+    //     _direction.x = GetHorizontalMovement();
+
+    //     _characterController.Move(_direction * Time.deltaTime);
+    // }
+
+    public void Move()
+    {
+        Debug.Log("plauer moved");
+    }
+
+    // void Jump()
+    // {
+    //     Debug.Log("jump detected");
+    // }
+
+    // float GetHorizontalMovement()
+    // {
+    //     return _moveAction.ReadValue<float>() * HorizontalSpeed;
+    // }
+
+    // float GetVerticalMovement()
+    // {
+    //     if (_characterController.isGrounded)
+    //     {
+    //         return 0f;
+    //     }
+    //     else
+    //     {
+    //         return k_gravity * gravityMultiplier;
+    //     }
+    // }
+}
